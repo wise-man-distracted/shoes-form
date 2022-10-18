@@ -68,6 +68,52 @@ main > section h1 {
   font-size: 1.8rem;
 }
 
+main > section form {
+  gap: .3rem;
+  color: #777777;
+  font-size: .9rem;
+}
+
+main > section form .checkboxes {
+  display: flex;
+  width: 20rem;
+  justify-content: space-between;
+  font-size: .8rem;
+  font-weight: 600;
+}
+
+input:not([type="file"]), textarea, select {
+  border: .1rem solid #777;
+  resize: none;
+}
+
+input:not([type="file"], [type="radio"], [type="checkbox"]):focus,
+select:focus, textarea:focus
+{
+  outline: none;
+  box-shadow: 0 0 .2rem #c2175b;
+}
+
+button:hover {
+  filter: brightness(130%);
+}
+
+button[type="reset"] {
+  border: none;
+  font-weight: 600;
+  padding: .3rem;
+  background-color: #777777;
+  color: white;
+}
+
+button[type="submit"] {
+  border: none;
+  font-weight: 600;
+  padding: .3rem;
+  background-color: #c2175b;
+  color: white;
+}
+
 main > aside {
   font-size: 0.9rem;
   text-align: justify;

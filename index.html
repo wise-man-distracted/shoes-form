@@ -28,7 +28,86 @@
       <header>
         <h1>Faça parte do nosso time</h1>
       </header>
-      
+      <form class="column" action="/" method="get">
+        <div class="column">
+          <label for="name">Nome</label>
+          <input type="text" id="name" name="fullname" required>
+        </div>
+        
+        <div class="column">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" 
+          placeholder="exemplo@exemplo.com" required>
+        </div>
+        
+        <div class="column">
+          <label for="phone-number">Telefone</label>
+          <input type="tel" name="phone-number" id="phone-number"
+          placeholder="(xx) 9xxxx-xxxx" required>
+        </div>
+
+        <div class="column">
+          <label for="departments">Departamentos</label>
+          <select name="department" id="departments">
+            <option value="" disabled selected
+             hidden>Selecione</option>
+            <option value="hr">Recursos Humanos</option>
+            <option value="sales">Vendas</option>
+            <option value="tech">Tecnologia</option>
+          </select>
+        </div>
+        
+        <label>Disponibilidade</label>
+        <div class="checkboxes">
+          <div>
+            <input type="checkbox" name="full-time" 
+            id="full-time" value="true">
+            <label for="full-time" >Integral (8h)</label>
+          </div>
+          <div>
+            <input type="checkbox" name="half-time" 
+            id="half-time" value="true">
+            <label for="half-time" >Meio Período</label>
+          </div>
+          <div>
+            <input type="checkbox" name="freelancer" 
+            id="freelancer" value="true">
+            <label for="freelancer" >Freelancer</label>
+          </div>
+        </div>
+        
+        <label>Qual a melhor forma para entrarmos em contato com você?</label>
+        <div class="checkboxes">
+          <div>
+            <input type="radio" name="contact" 
+            value="email" id="via-email">
+            <label for="via-email">Email</label>
+          </div>
+          <div>
+            <input type="radio" name="contact" 
+            value="call" id="via-call">
+            <label for="via-call">Ligação</label>
+          </div>
+          <div>
+            <input type="radio" name="contact" 
+            value="whatsapp" id="via-whatsapp">
+            <label for="via-whatsapp">Whatsapp</label>
+          </div>
+        </div>
+        
+        <div class="column">
+          <label for="message">Mensagem</label>
+          <textarea name="message" id="message" rows="3"></textarea>
+        </div>
+
+        <div>
+          <label for="curriculum">Curriculo</label>
+          <input type="file" accept=".pdf" multiple>
+        </div>
+
+        <button type="reset">limpar</button>
+        <button type="submit">enviar</button>
+      </form>
     </section>
     
     <aside>
