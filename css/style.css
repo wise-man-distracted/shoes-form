@@ -21,6 +21,11 @@ body > header {
   max-height: 100px;
   flex-shrink: 1;
   box-shadow: 0 1px 8px -4px black;
+  margin-top: 1rem;
+  position: sticky;
+  background-color: white;
+  top: 0;
+  z-index: 10;
 }
 
 body > header img {
@@ -120,6 +125,21 @@ main > aside {
   padding: 0 4rem 4rem 4rem;
 }
 
+main > aside img {
+  display: none;
+}
+
+main > a img {
+  display: block;
+  width: 5.5rem;
+  position: fixed;
+  left:rem;
+  right: 1rem;
+  top: rem;
+  bottom: 1rem;
+  z-index: 30;
+}
+
 body > footer {
   display: flex;
   align-items: center;
@@ -188,5 +208,11 @@ body > footer .column img {
     max-height: 43rem;
     margin-top: 4rem;
     margin-bottom: 4rem;
+    border: .5rem solid #c2175b;
+    position: relative;
+    right: 0rem;
+    left: 0rem;
+    bottom: 0rem;
+    top: 0rem;
   }
 }
